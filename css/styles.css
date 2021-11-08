@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.nav {
+    background-color: #05aed9;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px 5px;
+    width: 100%;
+   }
+   .nav .logo {
+       width: 100px;
+       height: 100px;
+       grid-column: 1 / 2;
+       padding: 10px;
+   }
+   .nav li {
+       list-style: none;
+   }
+   .nav a {
+       text-decoration: none;
+   }
+   .nav .menu {
+       grid-column: 4 / 7;
+       display: flex;
+       justify-content: space-around;
+   }
+   .nav .search {
+       grid-column: 9;
+       padding: 10px;
+       display: flex;
+       justify-content: flex-end;
+      
+   }
+   /* MAIN */
+   .main {
+       height: 80vh;
+       background-image: url(../images/tortuga.jpg);
+       background-size: center;
+       background-repeat: no-repeat;
+       background-position: center bottom;
+       background-size: cover;
+       max-width: 100%;
+       display: grid;
+       grid-template-columns: repeat(10,1fr);
+       grid-template-rows: repeat(8, 1fr);
+   }
+   
+   .main .maincontent {
+        color: rgb(7, 6, 6);
+       padding: 10px;
+      grid-column: 1 / 4;
+      grid-row: 1 / 6;
+      }
+      /* FOOTER */
+      .footer {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          height: 80px;
+          background-color: white;
+      }
+
+    .footer section img {
+        height: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 10x;
+        margin-left: 15px;
+        padding: 5px;
+    }
